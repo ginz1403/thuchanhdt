@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@android:color/white"
+    android:padding="@dimen/smallSpace"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/ic_black_coffee"
+        android:scaleType="fitCenter"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <TextView
+            android:textSize="@dimen/largeFontSize"
+            android:textColor="#000000"
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Black Coffee"/>
+        <TextView
+            android:textSize="@dimen/mediumFontSize"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/tvRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate"/>
+    </LinearLayout>
+    <TextView
+        android:textSize="@dimen/largeFontSize"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="49000 VND"/>
+</LinearLayout>
